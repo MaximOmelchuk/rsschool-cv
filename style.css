@@ -1,5 +1,88 @@
-p {
-    font-size: 30px;
-    color: brown;
-    text-align: center;
+body {
+    min-width: 940px;
+    height: 100%;
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000;
+    box-sizing: border-box;
 }
+
+header {
+    width: 940px;
+    margin: 0 auto;
+    height: 250px;
+    border: 2px solid rgb(221, 216, 216);
+    display: flex;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 40px;
+    width: 100%;
+    padding: 80px 20px 20px 80px;
+}
+
+main {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.contacts {
+    box-sizing: border-box;
+    width: 248px;
+    border: 2px solid rgb(221, 216, 216);
+    height: 500px;
+    border-top: none;
+    padding: 20px 20px;
+    background: rgb(221, 216, 216);
+}
+
+.cvmain {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    box-sizing: border-box;
+    border-top: 2px solid rgb(221, 216, 216);
+    margin: 0px;
+    padding: 0px;
+    width: 692px;
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    text-align: center;
+    
+}
+
+nav li {
+    display: inline-block;
+    height: 100%;
+    margin: 0px;
+    width: 130px;
+    background-color: rgb(209, 172, 172);
+    color: black;
+    text-decoration: none;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+nav li:hover {
+    background-color: rgb(177, 124, 124);
+}
+
+nav a {
+    display: inline-block;
+}
+
