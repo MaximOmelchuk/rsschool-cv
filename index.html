@@ -32,18 +32,18 @@
             </ul>
         </div>
 
-        <section class="cvmain">
+        <div class="cvmain">
             <nav>
                 <ul>
-                    <a href="#about"><li>About</li></a>
-                    <a href="#skills"><li>Skills</li></a>
-                    <a href="#code"><li style="width: 172px;">Code example</li></a>
-                    <a href="#education"><li>Education</li></a>
-                    <a href="#english"><li>English</li></a>
+                    <li><a href="#about"><div>About</div></a></li>
+                    <li><a href="#skills"><div>Skills</div></a></li>
+                    <li style="width: 172px;"><a href="#code"><div >Code example</div></a></li>
+                    <li><a href="#education"><div>Education</div></a></li>
+                    <li><a href="#english"><div>English</div></a></li>
                 </ul>
             </nav>
             <div class="cvtext">
-                <h2> <a name='about'></a> About me</h2>
+                <h2> <a id='about'></a> About me</h2>
                 <p>Started learning JavaScript in 2020 through codewars.com
                 just for work out the mind, but then codding got me hooked.
                 Nowadays I have own private legal practice and work as a legal
@@ -52,7 +52,7 @@
                 interesting for me and because it is impossible to be a lawyer in country
                 without law.</p>
 
-                <h2> <a name='skills'></a> Skills</h2>
+                <h2> <a id='skills'></a> Skills</h2>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -60,10 +60,10 @@
                     <li>Git</li>
                 </ul>
 
-                <h2> <a name='code'></a> Code example</h2>
+                <h2> <a id='code'></a> Code example</h2>
                 <p>Task: <a href="https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/javascript">Range Extraction</a></p>
-                <p>Solution: 
-                <pre>
+                <p>Solution: </p>
+                <pre><code>
 
 function solution(list){
     list=list.map((x,i)=>{
@@ -74,7 +74,7 @@ function solution(list){
                          .findIndex((y,j)=>y+1!==list[j+i+1]);
         if (last>=2) {
             let tmp=x+'-'+list[last+i];
-            for (let e=i+1; e<=last+i; e++) {
+            for (let e=i+1; e&lt;=last+i; e++) {
                 list[e]='';
             }
             return tmp;
@@ -82,9 +82,9 @@ function solution(list){
         }
     })
     return list.join(' ').trim().split(/ +/).join();
-}</pre></p>
+}</code></pre>
 
-                <h2> <a name='education'></a>Education</h2>
+                <h2> <a id='education'></a>Education</h2>
                 <ul>
                     <li>University: Belarusian State University, Law Faculty</li>
                     <li> Courses:
@@ -101,19 +101,20 @@ function solution(list){
                 <h2>Experience in development</h2>
                 <p><a href="https://maximomelchuk.github.io/rsschool-cv/">CV</a>, in progress... </p>
 
-                <h2><a name="english"></a>English</h2>
+                <h2><a id="english"></a>English</h2>
                 <p>B2, <a href="https://www.efset.org/cert/RqXh45">EF SET certificate</a> (60 points).  
                     I got some speaking practice while traveling, constantly  
                     improve reading and listening skills (technical docs, podcasts,  
                     films in original voice acting, etc.)</p>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <a href="https://github.com/MaximOmelchuk/"><div style="width: 200px;"><img src="GH.png" alt="GitHub" style="height: 70px;"></div></a>
-        <a href="https://rs.school/js/"><div style="width: 350px;"><img src="rs_school_js.svg" alt="GitHub" style="height: 70px;"></div></a>
-        <div style="font-size: 37px; line-height: 40px; width: 350px;">Copyright &#169 <br> 2021</div>
+        <div style="font-size: 37px; line-height: 25px; width: 248px;">Copyright &#169; <br> 2021</div>
+        <a href="https://github.com/MaximOmelchuk/"><div style="width: 300px;"><img src="GH.png" alt="GitHub" style="height: 50px;"></div></a>
+        <a href="https://rs.school/js/"><div style="width: 392px;"><img src="rs_school_js.svg" alt="GitHub" style="height: 50px;"></div></a>
+        
     </footer>
     
 </body>
