@@ -9,6 +9,9 @@ body {
     color: #000;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+    }
 
 header {
     width: 940px;
@@ -40,7 +43,20 @@ main {
     height: device-height;
     border-top: none;
     padding: 20px 20px;
+    padding-right: 5px;
     background: rgb(221, 216, 216);
+}
+
+.contacts li {
+    display: block;
+}
+.contacts a {
+    color: black;
+}
+
+.contacts a:hover {
+    color: rgb(85, 58, 58);
+    font-size: 12px;
 }
 
 .cvmain {
@@ -80,6 +96,7 @@ nav li {
 
 nav li:hover {
     background-color: rgb(177, 124, 124);
+    font-size: 18px;
 }
 
 nav a {
@@ -116,4 +133,24 @@ nav a {
 
 .cvtext a {
     color: black;
+}
+
+footer {
+    width: 940px;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    box-sizing: border-box;
+    background: rgb(209, 172, 172);
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+}
+
+footer a:hover {
+    background: rgb(240, 205, 205);
 }
