@@ -1,2 +1,3 @@
-https://MaximOmelchuk.github.io/rsschool-cv/
+https://MaximOmelchuk.github.io/rsschool-cv/cv
 
+git 
